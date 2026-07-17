@@ -1,0 +1,37 @@
+download:
+
+  url: "https://url55.ctfile.com/d/172955-2339886-8818eb?p=197222&d=2339886&fk=16adba"
+
+  download_dir: "temp_download"
+
+  output_file: "data/source.txt"
+
+  timeout: 180
+
+  retry: 3
+
+checker:
+
+  workers: 50
+
+  timeout: 8
+
+  retry: 3
+
+  verify_ssl: false
+
+report:
+
+  invalid_file: "data/invalid_urls.txt"
+
+  duplicate_file: "data/duplicate_urls.txt"
+
+  report_file: "data/report.md"
+
+  history_dir: "data/history"
+
+logging:
+
+  level: INFO
+
+  file: logs/checker.log
